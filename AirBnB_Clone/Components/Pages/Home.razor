@@ -1,0 +1,10 @@
+@page "/"
+@using AirBnB_Clone.Shared.Domain
+
+<PageTitle>Home</PageTitle>
+
+<h1>Welcome to AirBnB Clone - Developed by Usman Rahat </h1>
+
+<a href="@($"HostMode/{Host.Id}")" class="btn btn-outline-primary btn-sm mb-1">Host Mode</a>
+
+<a href="@($"GuestMode/{Guest.Id}")" class="btn btn-outline-primary btn-sm mb-1">Guest Mode</a>

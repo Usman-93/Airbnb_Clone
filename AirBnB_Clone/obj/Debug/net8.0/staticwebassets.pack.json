@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\UsmanRahat(AgileAnal\\RiderProjects\\AirBnB_Clone\\AirBnB_Clone\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AirBnB_Clone.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AirBnB_Clone.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\UsmanRahat(AgileAnal\\RiderProjects\\AirBnB_Clone\\AirBnB_Clone\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\UsmanRahat(AgileAnal\\RiderProjects\\AirBnB_Clone\\AirBnB_Clone\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\UsmanRahat(AgileAnal\\RiderProjects\\AirBnB_Clone\\AirBnB_Clone\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\UsmanRahat(AgileAnal\\RiderProjects\\AirBnB_Clone\\AirBnB_Clone\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AirBnB_Clone.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AirBnB_Clone.props",
+      "PackagePath": "build\\AirBnB_Clone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AirBnB_Clone.props",
+      "PackagePath": "buildMultiTargeting\\AirBnB_Clone.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AirBnB_Clone.props",
+      "PackagePath": "buildTransitive\\AirBnB_Clone.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

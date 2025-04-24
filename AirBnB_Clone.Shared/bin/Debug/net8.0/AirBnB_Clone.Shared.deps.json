@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AirBnB_Clone.Shared/1.0.0": {
+        "runtime": {
+          "AirBnB_Clone.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AirBnB_Clone.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@page "/HostMode/{HostId:int}/ManageBookings/{ListingId:int}"
+
+<h1>Welcome to your Dashboard </h1>
+
+<h2>Your Listings</h2>
+
+<table class="table table-light">
+    <thead class="table-primary">
+    <tr>
+        <th>Id</th>
+        <th>Status</th>
+        <th>From Date</th>
+        <th>To Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var x in ActiveBookings)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.Status</td>
+            <td>@x.FromDate</td>
+            <td>@x.ToDate</td>
+        </tr>
+    }
+    </tbody>
+
+</table>

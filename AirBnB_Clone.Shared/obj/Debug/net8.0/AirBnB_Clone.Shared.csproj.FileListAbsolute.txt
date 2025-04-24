@@ -1,0 +1,12 @@
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\bin\Debug\net8.0\AirBnB_Clone.Shared.deps.json
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\bin\Debug\net8.0\AirBnB_Clone.Shared.dll
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\bin\Debug\net8.0\AirBnB_Clone.Shared.pdb
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.AssemblyInfoInputs.cache
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.AssemblyInfo.cs
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.csproj.CoreCompileInputs.cache
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.dll
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\refint\AirBnB_Clone.Shared.dll
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.pdb
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\ref\AirBnB_Clone.Shared.dll
+C:\Users\UsmanRahat(AgileAnal\RiderProjects\AirBnB_Clone\AirBnB_Clone.Shared\obj\Debug\net8.0\AirBnB_Clone.Shared.sourcelink.json

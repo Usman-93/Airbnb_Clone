@@ -1,0 +1,46 @@
+@page "/HostMode/{HostId:int}"
+
+<h1>Welcome to your Dashboard @Host.FirstName @Host.LastName</h1>
+
+<h2>Your Listings</h2>
+
+<a href="@($"HostMode/{HostId}/AddListing")" class="btn btn-outline-primary btn-sm mb-1">
+    Add New Listing
+</a>
+
+<table class="table table-light">
+    <thead class="table-primary">
+    <tr>
+        <th>Id</th>
+        <th>Listing Name</th>
+        <th>Active Bookings</th>
+        <th>Host Id</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var listing in HostListings)
+        {
+            <tr>
+                <td>@listing.Id</td>
+                <td>@listing.ListingName</td>
+                <td>
+                    <a href="@($"/HostMode/{HostId}/ManageBookings/{listing.Id}")" class="btn btn-outline-primary btn-sm mb-1">
+                    @HostActiveBookings.Where(b => b.ListingId == listing.Id).Count() Active Bookings
+                    </a>
+                </td>
+
+                <td>@listing.HostId</td>
+                <td>@listing.Price</td>
+                <td>
+                    <a href="@($"/HostMode/{HostId}/EditListing/{listing.Id}")" class="btn btn-outline-primary btn-sm mb-1">
+                        Edit Listing
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+
+</table>
+
