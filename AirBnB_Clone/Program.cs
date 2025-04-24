@@ -6,10 +6,11 @@ using AirBnB_Clone.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorComponents();
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
 
-builder.Services.AddScoped<MockDataContext>();
-builder.Services.AddScoped<IAppRepository, MockDataRepository>();
+builder.Services.AddSingleton<MockDataContext>();
+builder.Services.AddSingleton<IAppRepository, MockDataRepository>();
 
 var app = builder.Build();
 
@@ -26,6 +27,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.MapRazorComponents<App>();
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode();
 
 app.Run();

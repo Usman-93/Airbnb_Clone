@@ -1,40 +1,54 @@
 @page "/HostMode/{HostId:int}/AddListing"
-<h3>AddListing</h3>
+@rendermode InteractiveServer
 
-<EditForm Model="NewListing" OnSubmit="OnSubmit" Enhance FormName="AddNewListing">
+@if(!Saved)
+{
 
-    @* HostId logic needs to be on the backend*@
 
-    @* <div class="row mb-3"> *@
-    @*     <label for="id" class="col-form-label col-md-3">Last name: </label> *@
-    @*     <div class="col-md-8"> *@
-    @*         <InputText id="id" class="form-control col-md-8" @bind-Value="@NewListing.Id" placeholder="Enter ID"></InputText> *@
-    @*     </div> *@
-    @* </div> *@
-
-    <div class="row mb-3">
-        <label for="Id" class="col-form-label col-md-3">Listing Id: </label>
-        <div class="col-md-8">
-            <InputNumber id="Id" class="form-control col-md-8" @bind-Value="@NewListing.Id" placeholder="Enter ID"></InputNumber>
+    <h3>AddListing</h3>
+    
+    <EditForm Model="NewListing" OnSubmit="OnSubmit" Enhance FormName="AddNewListing">
+    
+        @* HostId logic needs to be on the backend*@
+    
+        @* <div class="row mb-3"> *@
+        @*     <label for="id" class="col-form-label col-md-3">Last name: </label> *@
+        @*     <div class="col-md-8"> *@
+        @*         <InputText id="id" class="form-control col-md-8" @bind-Value="@NewListing.Id" placeholder="Enter ID"></InputText> *@
+        @*     </div> *@
+        @* </div> *@
+    
+        @* <div class="row mb-3"> *@
+        @*     <label for="Id" class="col-form-label col-md-3">Listing Id: </label> *@
+        @*     <div class="col-md-8"> *@
+        @*         <InputNumber id="Id" class="form-control col-md-8" @bind-Value="@NewListing.Id" placeholder="Enter ID"></InputNumber> *@
+        @*     </div> *@
+        @* </div> *@
+    
+        <div class="row mb-3">
+            <label for="ListingName" class="col-form-label col-md-3">Listing Name: </label>
+            <div class="col-md-8">
+                <InputText id="ListingName" class="form-control col-md-8" @bind-Value="@NewListing.ListingName" placeholder="Listing Name"></InputText>
+            </div>
         </div>
-    </div>
-
-    <div class="row mb-3">
-        <label for="ListingName" class="col-form-label col-md-3">Listing Name: </label>
-        <div class="col-md-8">
-            <InputText id="ListingName" class="form-control col-md-8" @bind-Value="@NewListing.ListingName" placeholder="Listing Name"></InputText>
+    
+        <div class="row mb-3">
+            <label for="Price" class="col-form-label col-md-3">Price: </label>
+            <div class="col-md-8">
+                <InputNumber id="Price" class="form-control col-md-8" @bind-Value="@NewListing.Price" placeholder="Price"></InputNumber>
+            </div>
         </div>
-    </div>
-
-    <div class="row mb-3">
-        <label for="Price" class="col-form-label col-md-3">Price: </label>
-        <div class="col-md-8">
-            <InputNumber id="Price" class="form-control col-md-8" @bind-Value="@NewListing.Price" placeholder="Price"></InputNumber>
+    
+        <div>
+            <button type="submit" class="btn btn-outline-primary ms-1">Submit</button>
         </div>
-    </div>
+    
+    </EditForm>
+}
 
+else
+{
     <div>
-        <button type="submit" class="btn btn-outline-primary ms-1">Submit</button>
+        <button type="button" @onclick="NavigateToHostMode" class="btn btn-outline-primary ms-1">Back to Host Screen</button>
     </div>
-
-</EditForm>
+}

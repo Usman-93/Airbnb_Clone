@@ -30,6 +30,8 @@ public class MockDataRepository : IAppRepository
 
     public void AddListing(Listing listing)
     {
+        int maxListId = _mockDataContext.Listings.Max(Listing => Listing.Id);
+        listing.Id = maxListId + 1;
         _mockDataContext.Listings.Add(listing);
     }
 
