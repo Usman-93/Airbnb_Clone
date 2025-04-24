@@ -1,4 +1,5 @@
-using AirBnB_Clone.Services;
+using AirBnB_Clone.Contracts.Repositories;
+using AirBnB_Clone.Data;
 using AirBnB_Clone.Shared.Domain;
 using Microsoft.AspNetCore.Components;
 
@@ -6,6 +7,9 @@ namespace AirBnB_Clone.Components.Pages;
 
 public partial class AddListing : ComponentBase
 {
+    [Inject]
+    public IAppRepository Repository { get; set; }
+    
     [SupplyParameterFromForm]
     public Listing NewListing { get; set; }
     
@@ -19,8 +23,9 @@ public partial class AddListing : ComponentBase
 
     private void OnSubmit()
     {
-        NewListing.HostId = HostId; 
-        MockDataService.Listings.Add(NewListing);
+        NewListing.HostId = HostId;
+        Repository.AddListing(NewListing);
+        
     }
 
 

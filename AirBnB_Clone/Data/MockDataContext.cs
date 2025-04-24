@@ -1,14 +1,26 @@
 using AirBnB_Clone.Shared.Domain;
 
-namespace AirBnB_Clone.Services;
+namespace AirBnB_Clone.Data;
 
-public class MockDataService
+public class MockDataContext
 {
-    public static List<Shared.Domain.Host> Hosts { get; } = InitializeHosts(); 
-    public static List<Guest> Guests {get; } = InitializeGuests();
-    public static List<Listing> Listings {get; } = InitializeListings();
-    public static List<Booking> Bookings {get; } = InitializeBookings();
+    public List<Shared.Domain.Host> Hosts { get; private set; } 
+    public List<Guest> Guests {get; private set; }
+    public List<Listing> Listings {get; private set; }
+    public List<Booking> Bookings {get; private set; }
     
+
+    // public static MockDataContext Instance { get; } = new MockDataContext();
+
+    public MockDataContext()
+    {
+        // I think the order in which you load them is important. So just think about the order in which you are running them
+        Hosts = InitializeHosts();
+        Guests = InitializeGuests();
+        Listings = InitializeListings();
+        Bookings = InitializeBookings();
+        
+    }
 
     private static List<Shared.Domain.Host> InitializeHosts()
     {

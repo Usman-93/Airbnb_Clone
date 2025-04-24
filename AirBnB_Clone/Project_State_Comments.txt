@@ -1,7 +1,23 @@
 Project Current State and Comments.
 
+LAST STATE:
+
 1. The DataMockService Class: has static properties for (Host, Guest, etc) and those are loaded via static methods.
 2. The Component classes (e.g. Home, HostMode, etc)  directly uses the DataMockService and we'll improve on this later - as currently it highly coupled.
  We are using directly e.g. MockDataService.Hosts.Single() etc. This is possible because the all properties are static.
  
 3. There is a lot of improvements around the design.
+
+========================================================================================================================
+
+LATEST STATE:
+1. MockDataService was in Services folder. I moved it to Data folder and renamed it to MockDataContext
+2. Idea is to start using Repository Pattern now
+3. The Repository pattern is used. IAppRepository, which is implemented by (at the moment) MockDataRepository - later we'll at Database. It would just be a single change program.cs. 
+FROM:
+builder.Services.AddScoped<IAppRepository, MockDataRepository>();
+TO:
+builder.Services.AddScoped<IAppRepository, AppDBRepository>();
+
+ 
+
