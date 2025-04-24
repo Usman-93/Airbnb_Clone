@@ -1,0 +1,7 @@
+Project Current State and Comments.
+
+1. The DataMockService Class: has static properties for (Host, Guest, etc) and those are loaded via static methods.
+2. The Component classes (e.g. Home, HostMode, etc)  directly uses the DataMockService and we'll improve on this later - as currently it highly coupled.
+ We are using directly e.g. MockDataService.Hosts.Single() etc. This is possible because the all properties are static.
+ 
+3. There is a lot of improvements around the design.
